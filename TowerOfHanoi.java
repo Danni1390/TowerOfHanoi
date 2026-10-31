@@ -3,6 +3,10 @@ public class TowerOfHanoi{
         int disk1 = 1;
         int disk2 = 2;
         int disk3 = 3;
+        int[] peg1 = {disk3, disk2, disk1};
+        int[] peg2 = {};
+        int[] peg3 = {};
+
         
     }
     public void firstDisk() {
