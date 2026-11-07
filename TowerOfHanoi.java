@@ -24,7 +24,7 @@ public class TowerOfHanoi{
     
     public static void printTowers() {
         //display towers
-        for (int i = num_disk; i < 10; i--) {
+        for (int i = num_disk-1; i < 10; i--) {
             for(int j = 0; j<3; j++){
                 System.out.println(towers[i][j]);
             }
@@ -65,9 +65,9 @@ public class TowerOfHanoi{
         if(DiskToMove != -1){
             for(int i = 0; i < num_disk; i++){
               if (towers[i][toRod].equals(" | "))
-              towers[i][toRod] = towers[DiskToMove][fromRod];
-              towers[DiskToMove][fromRod] = " | ";
-              break;
+                towers[i][toRod] = towers[DiskToMove][fromRod];
+                towers[DiskToMove][fromRod] = " | ";
+                break;
             }
         }
     }
